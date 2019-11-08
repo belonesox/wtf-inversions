@@ -96,7 +96,7 @@ def inversion_count_using_mergesort(left, right):
 
 
         try:
-            for ar in array[mid+1: right+1]:
+            for ar in iter(array[mid+1: right+1]):
                 while (array[i] <= ar):
                     i += 1
                     if i > mid:
